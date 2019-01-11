@@ -10,31 +10,70 @@ import UIKit
 
 class HomePageViewController: BaseViewController {
 
+    // MARK: - Interface
+    @IBOutlet var tableView: UITableView! {
+        didSet {
+            tableView.estimatedRowHeight = UITableView.automaticDimension
+            tableView.register(UINib.init(nibName: "WelcomeScreenTableViewCell", bundle: nil), forCellReuseIdentifier: "WelcomeScreenTableViewCell")
+        }
+    }
+    
+    // MARK: - Properties
+    fileprivate var headerTitle: [String] = []
+    fileprivate var tableViewCells: [IndexPath] = []
+    fileprivate let welcomeScreenCellIndexPath             = IndexPath(row: 0, section: 0)
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpData()
+    }
     
+    func setUpData() {
         navigationItem.title = "Home"
-        
+        tableViewCells = [welcomeScreenCellIndexPath]
+        headerTitle = ["Welcome"]
     }
-
-    @IBAction func addBtnPressed(_ sender: UIBarButtonItem) {
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.reloadData()
     }
-
+    
 }
 
-extension HomePageViewController: UITableViewDataSource {
+extension HomePageViewController: UITableViewDataSource, UITableViewDelegate {
     
     // MARK: - Rows
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
-    }
-    
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+        return tableViewCells.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int)
+    {
+        let header = view as! UITableViewHeaderFooterView
+        header.textLabel?.font = UIFont(name: "Futura", size: 13)
+        header.textLabel?.textColor = UIColor.gray
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return headerTitle[section]
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        // welcome screen details
+        if indexPath == welcomeScreenCellIndexPath, let cell = tableView.dequeueReusableCell(withIdentifier: "WelcomeScreenTableViewCell") as? WelcomeScreenTableViewCell {
+            cell.selectionStyle = .none
+            return cell
+        }
+
+        return UITableViewCell()
+    }
+    
 }
