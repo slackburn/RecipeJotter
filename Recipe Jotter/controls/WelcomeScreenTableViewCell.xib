@@ -73,9 +73,7 @@
                     <constraint firstItem="Vmp-Kb-MhW" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="0Fp-aF-feO"/>
                     <constraint firstItem="5kG-28-2k4" firstAttribute="top" secondItem="wI0-9A-Xeg" secondAttribute="bottom" constant="8" id="20w-k5-PLP"/>
                     <constraint firstItem="b9P-7o-RG5" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="5Qu-DK-MTe"/>
-                    <constraint firstItem="b9P-7o-RG5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="90O-6K-Vbr"/>
                     <constraint firstItem="ahO-a1-cnx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Ad6-rU-3cY"/>
-                    <constraint firstAttribute="bottom" secondItem="5kG-28-2k4" secondAttribute="bottom" constant="18.5" id="D9Z-0L-Lmb"/>
                     <constraint firstItem="wI0-9A-Xeg" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="I4n-rb-IB6"/>
                     <constraint firstItem="mUD-EB-0Jz" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="IrQ-Jg-YSD"/>
                     <constraint firstItem="5kG-28-2k4" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Ja0-qV-tJK"/>
