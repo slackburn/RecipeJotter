@@ -45,6 +45,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83354F9C21E9382700586D1B /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				83354F9821E921D700586D1B /* SearchViewController.swift */,
+				83354F9A21E921EB00586D1B /* FavouritesViewController.swift */,
+				83B10CC521E8D17E003483CE /* HomePageViewController.swift */,
+				83354F9621E8F25100586D1B /* BaseViewController.swift */,
+				83B10CC121E8942A003483CE /* MainViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		83354F9D21E9383500586D1B /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				83B10CB021E88B76003483CE /* Main.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
 		83B10CA021E88B76003483CE = {
 			isa = PBXGroup;
 			children = (
@@ -65,12 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				83B10CAC21E88B76003483CE /* AppDelegate.swift */,
-				83B10CB021E88B76003483CE /* Main.storyboard */,
-				83354F9821E921D700586D1B /* SearchViewController.swift */,
-				83354F9A21E921EB00586D1B /* FavouritesViewController.swift */,
-				83B10CC521E8D17E003483CE /* HomePageViewController.swift */,
-				83354F9621E8F25100586D1B /* BaseViewController.swift */,
-				83B10CC121E8942A003483CE /* MainViewController.swift */,
+				83354F9D21E9383500586D1B /* storyboards */,
+				83354F9C21E9382700586D1B /* controllers */,
 				83B10CB621E88B77003483CE /* Assets.xcassets */,
 				83B10CB821E88B77003483CE /* LaunchScreen.storyboard */,
 				83B10CBB21E88B77003483CE /* Info.plist */,
