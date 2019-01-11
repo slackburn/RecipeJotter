@@ -41,6 +41,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="nZ0-J8-m3k">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="z4z-ER-gii" id="6Kd-mA-474"/>
+                                    <outlet property="delegate" destination="z4z-ER-gii" id="d3r-im-22Q"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -61,7 +65,6 @@
         <!--Favourites View Controller-->
         <scene sceneID="iAS-TU-CFH">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jRu-xo-v4Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="0mB-Ix-Tt8" customClass="FavouritesViewController" customModule="Recipe_Jotter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FQv-Jt-ig8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -70,6 +73,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="aRU-6z-vSz">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="0mB-Ix-Tt8" id="flT-D7-H4I"/>
+                                    <outlet property="delegate" destination="0mB-Ix-Tt8" id="OWo-3L-CSP"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -82,7 +89,11 @@
                         <viewLayoutGuide key="safeArea" id="uWh-b2-MMz"/>
                     </view>
                     <navigationItem key="navigationItem" id="TkQ-YI-Rct"/>
+                    <connections>
+                        <outlet property="tableView" destination="aRU-6z-vSz" id="UT9-zh-ZTW"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jRu-xo-v4Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2041" y="912"/>
         </scene>
@@ -153,6 +164,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="IAT-nn-P1X">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="gsl-bZ-2LJ" id="Pyi-MI-6Dn"/>
+                                    <outlet property="delegate" destination="gsl-bZ-2LJ" id="wP5-dp-Bb1"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -165,6 +180,9 @@
                         <viewLayoutGuide key="safeArea" id="vY0-K0-a6M"/>
                     </view>
                     <navigationItem key="navigationItem" id="4wZ-Qa-47h"/>
+                    <connections>
+                        <outlet property="tableView" destination="IAT-nn-P1X" id="h93-Ub-IWV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6I-Hw-POe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
