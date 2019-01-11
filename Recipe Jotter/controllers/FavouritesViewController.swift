@@ -9,6 +9,14 @@
 import UIKit
 
 class FavouritesViewController: BaseViewController {
+    
+    // MARK: - Interface
+    @IBOutlet var tableView: UITableView! {
+        didSet {
+            tableView.estimatedRowHeight = UITableView.automaticDimension
+            
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
