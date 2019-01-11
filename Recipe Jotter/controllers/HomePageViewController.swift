@@ -15,6 +15,7 @@ class HomePageViewController: BaseViewController {
         didSet {
             tableView.estimatedRowHeight = UITableView.automaticDimension
             tableView.register(UINib.init(nibName: "WelcomeScreenTableViewCell", bundle: nil), forCellReuseIdentifier: "WelcomeScreenTableViewCell")
+            tableView.register(UINib.init(nibName: "FoodImageTableViewCell", bundle: nil), forCellReuseIdentifier: "FoodImageTableViewCell")
         }
     }
     
@@ -22,6 +23,7 @@ class HomePageViewController: BaseViewController {
     fileprivate var headerTitle: [String] = []
     fileprivate var tableViewCells: [IndexPath] = []
     fileprivate let welcomeScreenCellIndexPath             = IndexPath(row: 0, section: 0)
+    fileprivate let foodImageCellIndexPath                 = IndexPath(row: 0, section: 1)
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -31,8 +33,8 @@ class HomePageViewController: BaseViewController {
     
     func setUpData() {
         navigationItem.title = "Home"
-        tableViewCells = [welcomeScreenCellIndexPath]
-        headerTitle = ["Welcome"]
+        tableViewCells = [welcomeScreenCellIndexPath, foodImageCellIndexPath]
+        headerTitle = ["Welcome", "Try:"]
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -72,7 +74,13 @@ extension HomePageViewController: UITableViewDataSource, UITableViewDelegate {
             cell.selectionStyle = .none
             return cell
         }
-
+        
+        // signature food dish
+        if indexPath == foodImageCellIndexPath, let cell = tableView.dequeueReusableCell(withIdentifier: "FoodImageTableViewCell") as? FoodImageTableViewCell {
+            cell.selectionStyle = .none
+            return cell
+        }
+        
         return UITableViewCell()
     }
     
