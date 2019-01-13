@@ -14,6 +14,10 @@
 		83354FA121E93BDC00586D1B /* WelcomeScreenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83354F9F21E93BDC00586D1B /* WelcomeScreenTableViewCell.xib */; };
 		83354FA521E954E900586D1B /* FoodImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83354FA321E954E900586D1B /* FoodImageTableViewCell.swift */; };
 		83354FA621E954E900586D1B /* FoodImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83354FA421E954E900586D1B /* FoodImageTableViewCell.xib */; };
+		83354FA821E9E68A00586D1B /* SearchFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83354FA721E9E68A00586D1B /* SearchFooter.swift */; };
+		83354FAA21E9E95F00586D1B /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83354FA921E9E95F00586D1B /* DetailsViewController.swift */; };
+		83354FAC21E9EAEA00586D1B /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83354FAB21E9EAEA00586D1B /* Recipes.swift */; };
+		83354FAE21EA7A1000586D1B /* SomeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83354FAD21EA7A1000586D1B /* SomeData.swift */; };
 		83B10CAD21E88B76003483CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B10CAC21E88B76003483CE /* AppDelegate.swift */; };
 		83B10CB221E88B76003483CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B10CB021E88B76003483CE /* Main.storyboard */; };
 		83B10CB521E88B76003483CE /* Recipe_Jotter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83B10CB321E88B76003483CE /* Recipe_Jotter.xcdatamodeld */; };
@@ -31,6 +35,10 @@
 		83354F9F21E93BDC00586D1B /* WelcomeScreenTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeScreenTableViewCell.xib; sourceTree = "<group>"; };
 		83354FA321E954E900586D1B /* FoodImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodImageTableViewCell.swift; sourceTree = "<group>"; };
 		83354FA421E954E900586D1B /* FoodImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodImageTableViewCell.xib; sourceTree = "<group>"; };
+		83354FA721E9E68A00586D1B /* SearchFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFooter.swift; sourceTree = "<group>"; };
+		83354FA921E9E95F00586D1B /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		83354FAB21E9EAEA00586D1B /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
+		83354FAD21EA7A1000586D1B /* SomeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeData.swift; sourceTree = "<group>"; };
 		83B10CA921E88B76003483CE /* Recipe Jotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe Jotter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B10CAC21E88B76003483CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83B10CB121E88B76003483CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,6 +69,7 @@
 				83B10CC521E8D17E003483CE /* HomePageViewController.swift */,
 				83354F9621E8F25100586D1B /* BaseViewController.swift */,
 				83B10CC121E8942A003483CE /* MainViewController.swift */,
+				83354FA921E9E95F00586D1B /* DetailsViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -103,6 +112,9 @@
 		83B10CAB21E88B76003483CE /* Recipe Jotter */ = {
 			isa = PBXGroup;
 			children = (
+				83354FAD21EA7A1000586D1B /* SomeData.swift */,
+				83354FAB21E9EAEA00586D1B /* Recipes.swift */,
+				83354FA721E9E68A00586D1B /* SearchFooter.swift */,
 				83B10CAC21E88B76003483CE /* AppDelegate.swift */,
 				83354F9D21E9383500586D1B /* storyboards */,
 				83354F9C21E9382700586D1B /* controllers */,
@@ -188,11 +200,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83354FA821E9E68A00586D1B /* SearchFooter.swift in Sources */,
 				83354F9B21E921EB00586D1B /* FavouritesViewController.swift in Sources */,
 				83354F9921E921D700586D1B /* SearchViewController.swift in Sources */,
+				83354FAE21EA7A1000586D1B /* SomeData.swift in Sources */,
+				83354FAA21E9E95F00586D1B /* DetailsViewController.swift in Sources */,
 				83B10CAD21E88B76003483CE /* AppDelegate.swift in Sources */,
 				83B10CB521E88B76003483CE /* Recipe_Jotter.xcdatamodeld in Sources */,
 				83354FA021E93BDC00586D1B /* WelcomeScreenTableViewCell.swift in Sources */,
+				83354FAC21E9EAEA00586D1B /* Recipes.swift in Sources */,
 				83B10CC621E8D17E003483CE /* HomePageViewController.swift in Sources */,
 				83354FA521E954E900586D1B /* FoodImageTableViewCell.swift in Sources */,
 				83B10CC221E8942A003483CE /* MainViewController.swift in Sources */,
