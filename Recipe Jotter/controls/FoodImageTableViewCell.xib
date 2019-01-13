@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="300" height="161.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soup" translatesAutoresizingMaskIntoConstraints="NO" id="bwJ-lk-hdf">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tomato Soup" translatesAutoresizingMaskIntoConstraints="NO" id="bwJ-lk-hdf">
                         <rect key="frame" x="119" y="26" width="165" height="108"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="165" id="1AK-No-deY"/>
@@ -70,6 +70,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="soup" width="3238" height="2158"/>
+        <image name="Tomato Soup" width="3238" height="2158"/>
     </resources>
 </document>
